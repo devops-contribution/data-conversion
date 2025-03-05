@@ -13,9 +13,10 @@ cd ..
 
 Run the following commands.
 ```
-terraform init -chdir=terraform
-terraform plan -chdir=terraform
-terraform apply -chdir=terraform -auto-approve
+cd terraform
+terraform init
+terraform plan
+terraform apply -auto-approve
 ```
 
 ## Resources to be created
