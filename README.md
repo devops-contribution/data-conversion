@@ -38,5 +38,5 @@ You upload a CSV file to the S3 bucket named `custom-csv-bucket-velotio`, EventB
 ## Destroy
 ```
 cd terraform
-terraform destroy -chdir=terraform -auto-approve
+terraform destroy -auto-approve
 ```
