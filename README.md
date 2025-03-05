@@ -11,12 +11,11 @@ cp lambda_function.zip ../terraform/
 cd ..
 ```
 
-Now go to the `terraform` folder and run the following commands:
+Run the following commands.
 ```
-cd terraform
 terraform init
-terraform plan
-terraform apply -auto-approve
+terraform plan -chdir=terraform
+terraform apply -chdir=terraform -auto-approve
 ```
 
 ## Resources to be created
@@ -33,3 +32,9 @@ sns subscription
 
 ## Workflow:
 You upload a CSV file to the S3 bucket named `custom-csv-bucket-velotio`, EventBridge captures this event and triggers the Lambda function. The Lambda function converts the CSV file into JSON and uploads it to the `custom-json-bucket-velotio` bucket, then sends an email alert to the subscriber.
+
+
+## Destroy
+```
+terraform destroy -chdir=terraform -auto-approve
+```
