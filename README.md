@@ -31,7 +31,7 @@ sns topic
 sns subscription
 ```
 
-## Workflow:
+## Workflow
 You upload a CSV file to the S3 bucket named `custom-csv-bucket-velotio`, EventBridge captures this event and triggers the Lambda function. The Lambda function converts the CSV file into JSON and uploads it to the `custom-json-bucket-velotio` bucket, then sends an email alert to the subscriber.
 
 
