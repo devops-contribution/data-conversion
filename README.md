@@ -1,9 +1,8 @@
 # data-conversion
 
-
 ## How to start?
 
-Make zip of the python code and keep it in ```terraform``` folder.
+Make a zip of the Python code and keep it in the `terraform` folder.
 
 ```
 cd scripts/
@@ -12,7 +11,7 @@ cp lambda_function.zip ../terraform/
 cd ..
 ```
 
-Now go to ```terraform``` folder and run below commands
+Now go to the `terraform` folder and run the following commands:
 ```
 cd terraform
 terraform init
@@ -26,11 +25,11 @@ lambda function
 event bridge
 event bridge rule & target
 2 s3 buckets
-role   - assumed by lambda
+role - assumed by lambda
 policy - associate with above role
-sns topic 
+sns topic
 sns subscription
 ```
 
-
-## So you upload a csv file to s3 bucket named ```custom-csv-bucket-velotio```, event bridge will capture this event and trigger the lambda to convert that csv into json and upload it to ```custom-json-bucket-velotio``` bucket and send an email alert to the subscriber.
+## Workflow:
+You upload a CSV file to the S3 bucket named `custom-csv-bucket-velotio`, EventBridge captures this event and triggers the Lambda function. The Lambda function converts the CSV file into JSON and uploads it to the `custom-json-bucket-velotio` bucket, then sends an email alert to the subscriber.
