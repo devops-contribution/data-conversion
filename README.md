@@ -19,7 +19,7 @@ terraform plan
 terraform apply -auto-approve
 ```
 
-## Resources to be created:
+## Resources to be created
 ```
 lambda function
 event bridge
