@@ -14,6 +14,7 @@ cd ..
 
 Now go to ```terraform``` folder and run below commands
 ```
+cd terraform
 terraform init
 terraform plan
 terraform apply -auto-approve
