@@ -13,7 +13,7 @@ cd ..
 
 Run the following commands.
 ```
-terraform init
+terraform init -chdir=terraform
 terraform plan -chdir=terraform
 terraform apply -chdir=terraform -auto-approve
 ```
