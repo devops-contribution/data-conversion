@@ -3,7 +3,7 @@
 
 ## How to start?
 
-Make zip of the python code and keep it in terraform/ folder.
+Make zip of the python code and keep it in ```terraform``` folder.
 
 ```sh
 cd scripts/
